@@ -25,7 +25,7 @@ console.log("Starting from:", START_FROM);
 bot.sendMessage(CHAT_ID, "✅ Bot Started & Scanning...");
 
 // Load target addresses from JSON file
-const TARGET_ADDRESSES_FILE = "./keymaker/target_addresses.json";
+const TARGET_ADDRESSES_FILE = "./target_addresses.json";
 let targetAddresses = new Set();
 if (fs.existsSync(TARGET_ADDRESSES_FILE)) {
     const data = fs.readFileSync(TARGET_ADDRESSES_FILE, "utf8");
